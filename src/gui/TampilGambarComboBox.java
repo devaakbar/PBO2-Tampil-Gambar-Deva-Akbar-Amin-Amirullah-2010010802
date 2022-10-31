@@ -1,4 +1,4 @@
-package tampilgambar;
+package gui;
 
 import java.awt.CardLayout;
 
@@ -59,17 +59,17 @@ public class TampilGambarComboBox extends javax.swing.JFrame {
         imagePanel.setLayout(new java.awt.CardLayout());
 
         glassfishLB.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        glassfishLB.setIcon(new javax.swing.ImageIcon(getClass().getResource("/tampilgambar/glassfish.jpg"))); // NOI18N
+        glassfishLB.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gui/glassfish.jpg"))); // NOI18N
         glassfishLB.setToolTipText("null");
         imagePanel.add(glassfishLB, "Glassfish");
 
         javaeeLB.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        javaeeLB.setIcon(new javax.swing.ImageIcon(getClass().getResource("/tampilgambar/javaee.jpg"))); // NOI18N
+        javaeeLB.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gui/javaee.jpg"))); // NOI18N
         javaeeLB.setToolTipText("null");
         imagePanel.add(javaeeLB, "JavaEE");
 
         postgresqlLB.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        postgresqlLB.setIcon(new javax.swing.ImageIcon(getClass().getResource("/tampilgambar/postgresql.png"))); // NOI18N
+        postgresqlLB.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gui/postgresql.png"))); // NOI18N
         postgresqlLB.setToolTipText("null");
         imagePanel.add(postgresqlLB, "PostgreSQL");
 

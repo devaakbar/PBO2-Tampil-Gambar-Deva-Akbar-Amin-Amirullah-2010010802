@@ -1,8 +1,7 @@
-package tampilgambar;
+package gui;
 
 import java.awt.CardLayout;
-import java.awt.GraphicsDevice;
-import java.awt.GraphicsEnvironment;
+import javax.swing.JPanel;
 
 /*
 Nama            : Deva Akbar Amin Amirullah
@@ -13,15 +12,14 @@ Mata Kuliah     : Pemrograman Berbasis Objek 2 (PBO 2)
 Dosen Pengampu  : Bapak Muhammad Edya Rosadi, M.Kom
 
 Latihan 4
-Menampilkan Gambar dengan Button (FullScreen)
+Menampilkan Gambar dengan Button
 */
 
-public class TampilGambarButtonFullScreen extends javax.swing.JFrame {
-
+public class TampilGambarButton extends javax.swing.JFrame {
     /**
-     * Creates new form TampilGambarButtonFullScreen
+     * Creates new form TampilGambarButton
      */
-    public TampilGambarButtonFullScreen() {
+    public TampilGambarButton() {
         initComponents();
     }
 
@@ -34,7 +32,7 @@ public class TampilGambarButtonFullScreen extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        buttonPanel = new javax.swing.JPanel();
+        jPanel1 = new javax.swing.JPanel();
         glassfishBT = new javax.swing.JButton();
         javaeeBT = new javax.swing.JButton();
         postgresqlBT = new javax.swing.JButton();
@@ -45,10 +43,7 @@ public class TampilGambarButtonFullScreen extends javax.swing.JFrame {
         postgresqlLB = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setTitle("Menampilkan Gambar Full Screen");
-        setUndecorated(true);
-
-        buttonPanel.setLayout(new java.awt.GridLayout(1, 0));
+        setTitle("Menampilkan Gambar dengan Button");
 
         glassfishBT.setText("Glassfish");
         glassfishBT.addActionListener(new java.awt.event.ActionListener() {
@@ -56,7 +51,7 @@ public class TampilGambarButtonFullScreen extends javax.swing.JFrame {
                 glassfishBTActionPerformed(evt);
             }
         });
-        buttonPanel.add(glassfishBT);
+        jPanel1.add(glassfishBT);
 
         javaeeBT.setText("JavaEE");
         javaeeBT.addActionListener(new java.awt.event.ActionListener() {
@@ -64,7 +59,7 @@ public class TampilGambarButtonFullScreen extends javax.swing.JFrame {
                 javaeeBTActionPerformed(evt);
             }
         });
-        buttonPanel.add(javaeeBT);
+        jPanel1.add(javaeeBT);
 
         postgresqlBT.setText("PostgreSQL");
         postgresqlBT.addActionListener(new java.awt.event.ActionListener() {
@@ -72,7 +67,7 @@ public class TampilGambarButtonFullScreen extends javax.swing.JFrame {
                 postgresqlBTActionPerformed(evt);
             }
         });
-        buttonPanel.add(postgresqlBT);
+        jPanel1.add(postgresqlBT);
 
         exitBT.setText("Exit");
         exitBT.addActionListener(new java.awt.event.ActionListener() {
@@ -80,24 +75,24 @@ public class TampilGambarButtonFullScreen extends javax.swing.JFrame {
                 exitBTActionPerformed(evt);
             }
         });
-        buttonPanel.add(exitBT);
+        jPanel1.add(exitBT);
 
-        getContentPane().add(buttonPanel, java.awt.BorderLayout.PAGE_START);
+        getContentPane().add(jPanel1, java.awt.BorderLayout.PAGE_START);
 
         imagePanel.setLayout(new java.awt.CardLayout());
 
         glassfishLB.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        glassfishLB.setIcon(new javax.swing.ImageIcon(getClass().getResource("/tampilgambar/glassfish.jpg"))); // NOI18N
+        glassfishLB.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gui/glassfish.jpg"))); // NOI18N
         glassfishLB.setToolTipText("null");
         imagePanel.add(glassfishLB, "card1");
 
         javaeeLB.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        javaeeLB.setIcon(new javax.swing.ImageIcon(getClass().getResource("/tampilgambar/javaee.jpg"))); // NOI18N
+        javaeeLB.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gui/javaee.jpg"))); // NOI18N
         javaeeLB.setToolTipText("null");
         imagePanel.add(javaeeLB, "card2");
 
         postgresqlLB.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        postgresqlLB.setIcon(new javax.swing.ImageIcon(getClass().getResource("/tampilgambar/postgresql.png"))); // NOI18N
+        postgresqlLB.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gui/postgresql.png"))); // NOI18N
         postgresqlLB.setToolTipText("null");
         imagePanel.add(postgresqlLB, "card3");
 
@@ -118,7 +113,7 @@ public class TampilGambarButtonFullScreen extends javax.swing.JFrame {
 
     private void postgresqlBTActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_postgresqlBTActionPerformed
         CardLayout cl = (CardLayout)(imagePanel.getLayout());
-        cl.show(imagePanel,"card3");
+        cl.show(imagePanel, "card3");
     }//GEN-LAST:event_postgresqlBTActionPerformed
 
     private void exitBTActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_exitBTActionPerformed
@@ -142,36 +137,30 @@ public class TampilGambarButtonFullScreen extends javax.swing.JFrame {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(TampilGambarButtonFullScreen.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(TampilGambarButton.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(TampilGambarButtonFullScreen.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(TampilGambarButton.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(TampilGambarButtonFullScreen.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(TampilGambarButton.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(TampilGambarButtonFullScreen.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(TampilGambarButton.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
         //</editor-fold>
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                TampilGambarButtonFullScreen fullFrame = new TampilGambarButtonFullScreen();
-                
-                GraphicsDevice device =
-                        GraphicsEnvironment.getLocalGraphicsEnvironment().getDefaultScreenDevice();
-                device.setFullScreenWindow(fullFrame);
-                
-                fullFrame.setVisible(true);
+                new TampilGambarButton().setVisible(true);
             }
         });
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JPanel buttonPanel;
     private javax.swing.JButton exitBT;
     private javax.swing.JButton glassfishBT;
     private javax.swing.JLabel glassfishLB;
     private javax.swing.JPanel imagePanel;
+    private javax.swing.JPanel jPanel1;
     private javax.swing.JButton javaeeBT;
     private javax.swing.JLabel javaeeLB;
     private javax.swing.JButton postgresqlBT;
